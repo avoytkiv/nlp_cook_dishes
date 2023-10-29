@@ -1,0 +1,15 @@
+name: jupyter
+
+resources:
+  accelerators: T4:1
+  cloud: aws
+  region: us-west-1
+
+workdir: ~/nlp_cook_dishes
+file_mounts:
+  /notebooks: ~/nlp_cook_dishes/notebooks
+
+run: |
+  cd ~/sky_workdir
+  source activate pytorch
+  jupyter notebook
