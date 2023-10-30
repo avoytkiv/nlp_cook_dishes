@@ -4,6 +4,7 @@ resources:
   accelerators: T4:1
   cloud: aws
   region: us-west-1
+  ports: 8888
 
 workdir: ~/nlp_cook_dishes
 file_mounts:
@@ -12,4 +13,5 @@ file_mounts:
 run: |
   cd ~/sky_workdir
   source activate pytorch
-  jupyter notebook
+  pip install nltk
+  jupyter notebook --port 8888 --no-browser --ip=0.0.0.0 
