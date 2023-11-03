@@ -1,8 +1,8 @@
 name: jupyter
 
 resources:
-  # accelerators: T4:1 # GPU
-  instance_type: t2.2xlarge # CPU
+  accelerators: T4:1 # GPU
+  # instance_type: t2.2xlarge # CPU
   cloud: aws
   region: us-west-1
   ports: 8888
@@ -15,4 +15,5 @@ run: |
   cd ~/sky_workdir
   # source activate pytorch
   pip install -r requirements.txt
+  cd notebooks
   jupyter notebook --port 8888 --no-browser --ip=0.0.0.0 
