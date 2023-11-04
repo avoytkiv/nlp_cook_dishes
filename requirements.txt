@@ -1,7 +1,9 @@
-ipywidgets==7.7.1
-numpy==1.24.2
-pandas==1.5.3
-tqdm==4.64.0
-skypilot==0.4.0
+ipywidgets
+numpy
+pandas
+tqdm
+skypilot
 jupyter 
 nltk
+scikit-learn
+matplotlib
