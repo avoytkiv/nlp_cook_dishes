@@ -16,5 +16,11 @@ Jupyter Server 2.7.0 is running at:
 To get the public IP address of the head node of the cluster, run `sky status --ip jupyter`.
 In the jupyter server URL, replace `127.0.0.1` with the public IP from `sky status --ip jupyter` and open the URL in your browser.
 
+After a task’s execution, use rsync or scp to download files (e.g., checkpoints):
+
+```shell
+rsync -Pavz mycluster:/remote/source /local/dest  # copy from remote VM
+```
+
 
 Data source: https://www.kaggle.com/datasets/shuyangli94/food-com-recipes-and-user-interactions?select=PP_recipes.csv
