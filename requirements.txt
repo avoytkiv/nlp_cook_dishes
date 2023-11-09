@@ -8,3 +8,4 @@ nltk
 scikit-learn
 matplotlib
 transformers
+datasets
