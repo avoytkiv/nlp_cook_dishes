@@ -1,7 +1,7 @@
 # NLP Cook Dishes Project
 
 ## Project Overview
-This project is an in-depth exploration of various NLP models with the purpose of generating text based on a dataset of recipes. The study compares different language modeling techniques to understand their effectiveness in the context of recipe generation. It serves as an educational endeavor to understand the nuances of NLP model architectures and their applications.
+This project is an in-depth exploration of various NLP models with the purpose of generating text based on a dataset of recipes. It serves as an educational endeavor to understand the nuances of NLP model architectures and their applications.
 
 ## Setup
 
